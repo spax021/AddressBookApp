@@ -1,0 +1,66 @@
+=========================================================================
+CREATE TABLE `addressbook`.`tblcontact` (
+  
+`id` INT NOT NULL AUTO_INCREMENT,
+  
+`firstname` VARCHAR(45) NULL,
+  
+`lastname` VARCHAR(45) NULL,
+  
+`addrprivate` VARCHAR(45) NULL,
+  
+`addrbusiness` VARCHAR(45) NULL,
+  
+`city` VARCHAR(45) NULL,
+  
+`province` VARCHAR(45) NULL,
+  
+`zipcode` VARCHAR(45) NULL,
+  
+`numberprivate` VARCHAR(45) NULL,
+  
+`numberbusiness` VARCHAR(45) NULL,
+  
+`numberfax` VARCHAR(45) NULL,
+  
+`mailaddrprivate` VARCHAR(45) NULL,
+  
+`mailaddrbusiness` VARCHAR(45) NULL,
+  
+`age` INT NULL,
+  
+`contgroup` VARCHAR(45) NULL,
+  
+`info` VARCHAR(45) NULL,
+  
+PRIMARY KEY (`id`));
+=========================================================================
+INSERT INTO `addressbook`.`tblcontact` 
+(`id`, `firstname`, `lastname`, `addrprivate`, `addrbusiness`, `city`, `province`, `zipcode`, `numberprivate`, `numberbusiness`, `numberfax`, `mailaddrprivate`, `mailaddrbusiness`, `age`, `contgroup`, `info`) 
+VALUES 
+(1, 'name1', 'surname1', 'addrprivate1', 'addrbusiness1', 'city1', 'province1', 'zipcode1', 'numprivate1', 'numbusiness1', 'fax1', 'mailprivate1', 'mailbusiness1', '10', 'relative', 'Good person1'),
+(2, 'name2', 'surname2', 'addrprivate2', 'addrbusiness2', 'city2', 'province2', 'zipcode2', 'numprivate2', 'numbusiness2', 'fax2', 'mailprivate2', 'mailbusiness2', '20', 'relative', 'Good person2'),
+(3, 'name3', 'surname3', 'addrprivate3', 'addrbusiness3', 'city3', 'province3', 'zipcode3', 'numprivate3', 'numbusiness3', 'fax3', 'mailprivate3', 'mailbusiness3', '30', 'relative', 'Good person3'),
+(4, 'name4', 'surname4', 'addrprivate4', 'addrbusiness4', 'city4', 'province4', 'zipcode4', 'numprivate4', 'numbusiness4', 'fax4', 'mailprivate4', 'mailbusiness4', '40', 'relative', 'Good person4'),
+(5, 'name5', 'surname5', 'addrprivate5', 'addrbusiness5', 'city5', 'province5', 'zipcode5', 'numprivate5', 'numbusiness5', 'fax5', 'mailprivate5', 'mailbusiness5', '50', 'relative', 'Good person5'),
+(6, 'name6', 'surname6', 'addrprivate6', 'addrbusiness6', 'city6', 'province6', 'zipcode6', 'numprivate6', 'numbusiness6', 'fax6', 'mailprivate6', 'mailbusiness6', '60', 'relative', 'Good person6'),
+(7, 'name7', 'surname7', 'addrprivate7', 'addrbusiness7', 'city7', 'province7', 'zipcode7', 'numprivate7', 'numbusiness7', 'fax7', 'mailprivate7', 'mailbusiness7', '70', 'relative', 'Good person7'),
+(8, 'name8', 'surname8', 'addrprivate8', 'addrbusiness8', 'city8', 'province8', 'zipcode8', 'numprivate8', 'numbusiness8', 'fax8', 'mailprivate8', 'mailbusiness8', '80', 'relative', 'Good person8'),
+(9, 'name9', 'surname9', 'addrprivate9', 'addrbusiness9', 'city9', 'province9', 'zipcode9', 'numprivate9', 'numbusiness9', 'fax9', 'mailprivate9', 'mailbusiness9', '90', 'relative', 'Good person9'),
+(10, 'name10', 'surname10', 'addrprivate10', 'addrbusiness10', 'city10', 'province10', 'zipcode10', 'numprivate10', 'numbusiness10', 'fax10', 'mailprivate10', 'mailbusiness10', '100', 'relative', 'Good person10'),
+(11, 'name11', 'surname11', 'addrprivate11', 'addrbusiness11', 'city11', 'province11', 'zipcode11', 'numprivate11', 'numbusiness11', 'fax11', 'mailprivate11', 'mailbusiness11', '110', 'relative', 'Good person11'),
+(12, 'name12', 'surname12', 'addrprivate12', 'addrbusiness12', 'city12', 'province12', 'zipcode12', 'numprivate12', 'numbusiness12', 'fax12', 'mailprivate12', 'mailbusiness12', '120', 'relative', 'Good person12'),
+(13, 'name13', 'surname13', 'addrprivate13', 'addrbusiness13', 'city13', 'province13', 'zipcode13', 'numprivate13', 'numbusiness13', 'fax13', 'mailprivate13', 'mailbusiness13', '130', 'relative', 'Good person13'),
+(14, 'name14', 'surname14', 'addrprivate14', 'addrbusiness14', 'city14', 'province14', 'zipcode14', 'numprivate14', 'numbusiness14', 'fax14', 'mailprivate14', 'mailbusiness14', '140', 'relative', 'Good person14'),
+(15, 'name15', 'surname15', 'addrprivate15', 'addrbusiness15', 'city15', 'province15', 'zipcode15', 'numprivate15', 'numbusiness15', 'fax15', 'mailprivate15', 'mailbusiness15', '150', 'relative', 'Good person15'),
+(16, 'name16', 'surname16', 'addrprivate16', 'addrbusiness16', 'city16', 'province16', 'zipcode16', 'numprivate16', 'numbusiness16', 'fax16', 'mailprivate16', 'mailbusiness16', '160', 'relative', 'Good person16'),
+(17, 'name17', 'surname17', 'addrprivate17', 'addrbusiness17', 'city17', 'province17', 'zipcode17', 'numprivate17', 'numbusiness17', 'fax17', 'mailprivate17', 'mailbusiness17', '170', 'relative', 'Good person17'),
+(18, 'name18', 'surname18', 'addrprivate18', 'addrbusiness18', 'city18', 'province18', 'zipcode18', 'numprivate18', 'numbusiness18', 'fax18', 'mailprivate18', 'mailbusiness18', '180', 'relative', 'Good person18'),
+(19, 'name19', 'surname19', 'addrprivate19', 'addrbusiness19', 'city19', 'province19', 'zipcode19', 'numprivate19', 'numbusiness19', 'fax19', 'mailprivate19', 'mailbusiness19', '190', 'relative', 'Good person19'),
+(20, 'name20', 'surname20', 'addrprivate20', 'addrbusiness20', 'city20', 'province20', 'zipcode20', 'numprivate20', 'numbusiness20', 'fax20', 'mailprivate20', 'mailbusiness20', '200', 'relative', 'Good person20'),
+(21, 'name21', 'surname21', 'addrprivate21', 'addrbusiness21', 'city21', 'province21', 'zipcode21', 'numprivate21', 'numbusiness21', 'fax21', 'mailprivate21', 'mailbusiness21', '210', 'relative', 'Good person21'),
+(22, 'name22', 'surname22', 'addrprivate22', 'addrbusiness22', 'city22', 'province22', 'zipcode22', 'numprivate22', 'numbusiness22', 'fax22', 'mailprivate22', 'mailbusiness22', '220', 'relative', 'Good person22'),
+(23, 'name23', 'surname23', 'addrprivate23', 'addrbusiness23', 'city23', 'province23', 'zipcode23', 'numprivate23', 'numbusiness23', 'fax23', 'mailprivate23', 'mailbusiness23', '230', 'relative', 'Good person23'),
+(24, 'name24', 'surname24', 'addrprivate24', 'addrbusiness24', 'city24', 'province24', 'zipcode24', 'numprivate24', 'numbusiness24', 'fax24', 'mailprivate24', 'mailbusiness24', '240', 'relative', 'Good person24'),
+(25, 'name25', 'surname25', 'addrprivate25', 'addrbusiness25', 'city25', 'province25', 'zipcode25', 'numprivate25', 'numbusiness25', 'fax25', 'mailprivate25', 'mailbusiness25', '250', 'relative', 'Good person25'),
+(26, 'name26', 'surname26', 'addrprivate26', 'addrbusiness26', 'city26', 'province26', 'zipcode26', 'numprivate26', 'numbusiness26', 'fax26', 'mailprivate26', 'mailbusiness26', '260', 'relative', 'Good person26');

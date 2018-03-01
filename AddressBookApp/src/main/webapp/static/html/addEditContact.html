@@ -1,0 +1,99 @@
+<h1>Add/edit contact</h1>
+
+<form class="form-horizontal" data-ng-init="initContact()">
+    <div class="form-group">
+        <label class="col-sm-2">First name</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.firstName" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Last name</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.lastName" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Priv. addr</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.addrPrivate" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Bus. addr</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.addrBusiness" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">City</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.city" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Province</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.province" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Zipcode</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.zipcode" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Priv. nbr</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.numberPrivate" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Bus. nbr</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.numberBusiness" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Fax nbr</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.numberFax" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Priv. e-mail</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.mailAddrPrivate" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Bus. e-mail</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.mailAddrBusiness" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Age</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.age" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Group</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.contGroup" />
+        </div>
+    </div>      
+    <div class="form-group">
+        <label class="col-sm-2">Info</label>
+        <div class="col-sm-6">
+            <input class="form-control" data-ng-model="contact.info" />
+        </div>
+    </div>      
+    <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button class="btn btn-default" data-ng-click="saveContact()">Save</button>
+    </div>
+  </div>
+</form>

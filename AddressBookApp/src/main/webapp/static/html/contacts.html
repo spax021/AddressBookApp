@@ -1,0 +1,65 @@
+<h1>Contacts ({{ totalElements }})</h1>
+
+<input data-ng-model="search" />
+<button class="btn btn-default" data-ng-click="getContacts()">Search</button>
+<button class="btn btn-default" data-ng-click="search = null; getContacts()">Clear</button>
+
+<table class="table table-bordered" data-ng-init="getContacts()">
+	<thead>
+		<tr>
+				<th>Id:</th>
+				<th>First name</th>
+				<th>Last name</th>
+				<th>Private address</th>
+				<th>Business address</th>
+				<th>City</th>
+				<th>Province</th>
+				<th>Zipcode</th>
+				<th>Private number</th>
+				<th>Business number</th>
+				<th>Fax</th>
+				<th>Private e-mail</th>
+				<th>Business e-mail</th>
+				<th>Age</th>
+				<th>Group</th>
+				<th>Info</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr data-ng-repeat="contact in contacts">
+			<td>{{ contact.id }}</td>
+			<td>{{ contact.firstName }}</td>
+			<td>{{ contact.lastName }}</td>
+			<td>{{ contact.addrPrivate }}</td>
+			<td>{{ contact.addrBusiness }}</td>
+			<td>{{ contact.city }}</td>
+			<td>{{ contact.province }}</td>
+			<td>{{ contact.zipcode }}</td>
+			<td>{{ contact.numberPrivate }}</td>
+			<td>{{ contact.numberBusiness }}</td>
+			<td>{{ contact.numberFax }}</td>
+			<td>{{ contact.mailAddrPrivate }}</td>
+			<td>{{ contact.mailAddrBusiness }}</td>
+			<td>{{ contact.age }}</td>
+			<td>{{ contact.contGroup }}</td>
+			<td>{{ contact.info }}</td>
+			
+			<td>
+                <button type="button" class="btn btn-danger btn-sm" data-ng-click="deleteContact(contact.id, $index)">Delete</button>
+                <a class="btn btn-default btn-sm" href="#/contacts/edit/{{ contact.id }}">Edit</a>
+            </td>
+		</tr>
+	</tbody>
+</table>
+<div class="col-md-12 text-right">
+	<button class="btn btn-default" data-ng-click="changePage(page - 1)" data-ng-disabled="page == 0">Previous</button>
+	<span class="label label-default">{{ page + 1 }}</span>
+	<button class="btn btn-default" data-ng-click="changePage(page + 1)" data-ng-disabled="page == totalPages - 1">Next</button>
+</div>
+
+<div class="col-md-12 text-center">
+    <span data-ng-hide="successMessage || errorMessage"	class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+    <span class="label label-danger">{{ errorMessage }}</span>
+</div>
+
+<a href="#/contacts/add">Add contact</a>
